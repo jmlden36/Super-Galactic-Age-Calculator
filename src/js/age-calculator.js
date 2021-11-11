@@ -16,4 +16,7 @@ export default class AgeCalculator {
   calcMarsAge() {
     this.marsAge /= 1.88;
   }
+  calcJupiterAge() {
+    this.jupiterAge /= 11.86
+  }
 }
