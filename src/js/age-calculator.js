@@ -8,9 +8,12 @@ export default class AgeCalculator {
     this.lifeExpectancySurpassedBy = userInputLifeExpectancy;
   }
   calcMercuryAge() {
-    this.mercuryAge /= .24
+    this.mercuryAge /= .24;
   }
   calcVenusAge() {
-    this.venusAge /= .62
+    this.venusAge /= .62;
+  }
+  calcMarsAge() {
+    this.marsAge /= 1.88;
   }
 }
