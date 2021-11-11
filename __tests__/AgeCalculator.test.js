@@ -23,4 +23,8 @@ describe('AgeCalculator', () => {
     myAgeCalculator.calcVenusAge();
     expect(myAgeCalculator.venusAge).toEqual(67.74193548387098);
   });
+  test('should take user inputted value, divide it by 1.88 and assign that value to marsAge', () => {
+    myAgeCalculator.calcMarsAge();
+    expect(myAgeCalculator.marsAge).toEqual(22.340425531914896);
+  });
 });
