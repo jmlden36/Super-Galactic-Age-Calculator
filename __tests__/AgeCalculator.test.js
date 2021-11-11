@@ -36,4 +36,11 @@ describe('AgeCalculator', () => {
   test('should return the sum of this.age - this.lifeExpectancyEarth', () => {
     expect(myAgeCalculator.yearsSurpassed()).toEqual(-43);
   });
+  test('should return the years left to live in mercury years', () => {
+    expect(myAgeCalculator.yearsLeftOrSurpassedMercury).toEqual(179.16666666666669);
+  });
+  test('should return the years surpassed expectancy to live in mercury years', () => {
+    let myAgeCalculator2 = new AgeCalculator(55, 22);
+    expect(myAgeCalculator2.yearsLeftOrSurpassedMercury).toEqual(137.5);
+  });
 });
