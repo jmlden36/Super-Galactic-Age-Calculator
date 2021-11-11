@@ -27,10 +27,13 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator.olderOrNot()).toEqual(true);    
   });
   test('should take this.lifeExpectancyEarth and return false if it is not greater than or equal to this.userInputAge', () => {
-    let myAgeCalculator2 = new AgeCalculator(55, 22)
+    let myAgeCalculator2 = new AgeCalculator(55, 22);
     expect(myAgeCalculator2.olderOrNot()).toEqual(false);    
   }); 
   test('should return the sum of this.lifeExpectancyEarth - this.age', () => {
     expect(myAgeCalculator.yearsLeft()).toEqual(43);
+  });
+  test('should return the sum of this.age - this.lifeExpectancyEarth', () => {
+    expect(myAgeCalculator2.yearsSurpassed()).toEqual(-43);
   });
 });
