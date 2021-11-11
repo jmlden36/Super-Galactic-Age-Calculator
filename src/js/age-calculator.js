@@ -17,10 +17,13 @@ export default class AgeCalculator {
   }
   olderOrNot() {
     if (this.lifeExpectancyEarth >= this.age) {
-      return true
+      return true;
     } else {
-      return false
+      return false;
     }
+  }
+  yearsLeft() {
+    return this.lifeExpectancyEarth - this.age;
   }
 }
 
