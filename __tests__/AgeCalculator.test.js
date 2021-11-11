@@ -15,8 +15,12 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator.lifeExpectancy).toEqual(85);
     expect(myAgeCalculator.lifeExpectancySurpassedBy).toEqual(85);
   });
-  test('should take user inputted integer, divide it by .24 and assign that value to mercuryAge', () => {
+  test('should take user inputted value, multiply it  it by .24 and assign that value to mercuryAge', () => {
     myAgeCalculator.calcMercuryAge();
     expect(myAgeCalculator.mercuryAge).toEqual(175);
+  });
+  test('should take user inputted value, divide it by .62 and assign that value to venusAge', () => {
+    myAgeCalculator.calcVenusAge();
+    expect(myAgeCalculator.venusAge).toEqual(67.74193548387098);
   });
 });
