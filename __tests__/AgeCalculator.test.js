@@ -34,6 +34,6 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator.yearsLeft()).toEqual(43);
   });
   test('should return the sum of this.age - this.lifeExpectancyEarth', () => {
-    expect(myAgeCalculator2.yearsSurpassed()).toEqual(-43);
+    expect(myAgeCalculator.yearsSurpassed()).toEqual(-43);
   });
 });
