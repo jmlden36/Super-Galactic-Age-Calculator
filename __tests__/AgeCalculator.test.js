@@ -23,9 +23,13 @@ describe('AgeCalculator', () => {
   test('should take this.age and divide it by 11.86 and return that value as a new jupiterAge key value', () => {    
     expect(myAgeCalculator.jupiterAge()).toEqual(3.5413153456998314);
   });
-  test('should take this.lifeExpectancyEarth and see if it is greater than or equal to this.userInputAge', () => {
-    expect(myAgeCalculator.olderOrNot()).toEqual(true);
+  test('should take this.lifeExpectancyEarth and return true if it is greater than or equal to this.userInputAge', () => {
+    expect(myAgeCalculator.olderOrNot()).toEqual(true);    
   });
+  test('should take this.lifeExpectancyEarth and return false if it is not greater than or equal to this.userInputAge', () => {
+    let myAgeCalculator2 = new AgeCalculator(55, 22)
+    expect(myAgeCalculator2.olderOrNot()).toEqual(false);    
+  }); 
   test('should return the sum of this.lifeExpectancyEarth - this.age', () => {
     expect(myAgeCalculator.yearsLeft()).toEqual(43);
   });
