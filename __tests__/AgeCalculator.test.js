@@ -11,10 +11,13 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator.age).toEqual(42);
     expect(myAgeCalculator.lifeExpectancyEarth).toEqual(85);   
   });
-  test('should take this.age and divide it by .24 and return that value as a new marsAge key value', () => {    
-    expect(myAgeCalculator.marsAge()).toEqual(175);
+  test('should take this.age and divide it by .24 and return that value as a new mercuryAge key value', () => {    
+    expect(myAgeCalculator.mercuryAge()).toEqual(175);
   });
   test('should take this.age and divide it by .62 and return that value as a new venusAge key value', () => {    
     expect(myAgeCalculator.venusAge()).toEqual(67.74193548387098);
-  });    
+  });
+  test('should take this.age and divide it by 1.88 and return that value as a new marsAge key value', () => {    
+    expect(myAgeCalculator.marsAge()).toEqual(22.340425531914896);
+  });
 });
