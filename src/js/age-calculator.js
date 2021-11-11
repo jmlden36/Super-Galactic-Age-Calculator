@@ -6,6 +6,9 @@ export default class AgeCalculator {
   marsAge() {
     this.marsAge = this.age / .24;
   }
+  venusAge() {
+    this.venusAge = this.age / .62
+  }
 }
 
 
