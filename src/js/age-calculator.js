@@ -3,11 +3,14 @@ export default class AgeCalculator {
     this.age = userInputAge;
     this.lifeExpectancyEarth = userInputLifeExpectancy;    
   }
-  marsAge() {
+  mercuryAge() {
     return this.age / .24;
   }
   venusAge() {
     return this.age / .62
+  }
+  marsAge() {
+    return this.age / 1.88
   }
 }
 
