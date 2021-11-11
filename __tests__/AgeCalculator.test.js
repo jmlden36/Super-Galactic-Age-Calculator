@@ -12,7 +12,7 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator.lifeExpectancyEarth).toEqual(85);   
   });
   test('should take this.age and divide it by .24 and return that value as a new marsAge key value pair', () => {
-    this.age.marsAge();
+    myAgeCalculator.marsAge();
     expect(myAgeCalculator.marsAge).toEqual(175);
   });    
 });
