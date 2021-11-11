@@ -27,4 +27,8 @@ describe('AgeCalculator', () => {
     myAgeCalculator.calcMarsAge();
     expect(myAgeCalculator.marsAge).toEqual(22.340425531914896);
   });
+  test('should take user inputted value, divide it by 11.86 and assign that value to jupiterAge', () => {
+    myAgeCalculator.calcJupiterAge();
+    expect(myAgeCalculator.jupiterAge).toEqual(22.340425531914896);
+  });
 });
