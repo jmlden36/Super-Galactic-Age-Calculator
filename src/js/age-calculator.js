@@ -43,6 +43,9 @@ export default class AgeCalculator {
   yearsLeftMars() {
     return this.yearsLeft() / 1.88;
   }
+  yearsSurpassedMars() {
+    return this.yearsSurpassed() / 1.88;
+  }
 }
 
 
