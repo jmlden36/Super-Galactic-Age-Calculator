@@ -44,10 +44,10 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator2.yearsSurpassedMercury()).toEqual(137.5);
   });
   test('should return the years left to live in venus years', () => {
-    expect(myAgeCalculator.yearsLeftVenus()).toEqual(69.35483870967741);
+    expect(myAgeCalculator.yearsLeftVenus()).toEqual(69.35483870967742);
   });
   test('should return the years surpassed expectancy to live in venus years', () => {
     let myAgeCalculator2 = new AgeCalculator(55, 22);
-    expect(myAgeCalculator2.yearsSurpassedVenus()).toEqual(53.2258064516129);
+    expect(myAgeCalculator2.yearsSurpassedVenus()).toEqual(53.225806451612904);
   });
 });
