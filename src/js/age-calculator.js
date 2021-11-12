@@ -49,6 +49,9 @@ export default class AgeCalculator {
   yearsLeftJupiter() {
     return this.yearsLeft() / 11.86;
   }
+  yearsSurpassedJupiter() {
+    return this.yearsSurpassed() / 11.86;
+  }
 }
 
 
