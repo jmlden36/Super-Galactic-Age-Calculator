@@ -31,6 +31,12 @@ export default class AgeCalculator {
   yearsLeftMercury() {
     return this.yearsLeft() / .24;
   }
+  yearsSurpassedMercury() {
+    return this.yearsSurpassed() / .24;
+  }
+  yearsLeftVenus() {
+    return this.yearsLeft() / .62;
+  }
 }
 
 
