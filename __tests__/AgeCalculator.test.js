@@ -50,4 +50,18 @@ describe('AgeCalculator', () => {
     let myAgeCalculator2 = new AgeCalculator(55, 22);
     expect(myAgeCalculator2.yearsSurpassedVenus()).toEqual(53.225806451612904);
   });
+  test('should return the years left to live in mars years', () => {
+    expect(myAgeCalculator.yearsLeftMars()).toEqual(22.872340425531917);
+  });
+  test('should return the years surpassed expectancy to live in mars years', () => {
+    let myAgeCalculator2 = new AgeCalculator(55, 22);
+    expect(myAgeCalculator2.yearsSurpassedMars()).toEqual(17.5531914893617);
+  });
+  test('should return the years left to live in jupiter years', () => {
+    expect(myAgeCalculator.yearsLeftJupiter()).toEqual(3.625632377740304);
+  });
+  test('should return the years surpassed expectancy to live in jupiter years', () => {
+    let myAgeCalculator2 = new AgeCalculator(55, 22);
+    expect(myAgeCalculator2.yearsSurpassedJupiter()).toEqual(2.782462057335582);
+  });
 });
