@@ -64,4 +64,7 @@ describe('AgeCalculator', () => {
     let myAgeCalculator2 = new AgeCalculator(55, 22);
     expect(myAgeCalculator2.yearsSurpassedJupiter()).toEqual(2.782462057335582);
   });
+  test('should create an array of the 4 planet ages', () => {
+    expect(myAgeCalculator.arrayOfAges()).toEqual([175, 67.74193548387098, 22.340425531914896, 3.5413153456998314])
+  })
 });
