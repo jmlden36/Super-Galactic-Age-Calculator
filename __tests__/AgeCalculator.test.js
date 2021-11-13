@@ -23,9 +23,6 @@ describe('AgeCalculator', () => {
   test('should take this.age and divide it by 11.86 and return that value as a new jupiterAge key value', () => {    
     expect(myAgeCalculator.jupiterAge()).toEqual(3.5413153456998314);
   });
-  test('should take this.lifeExpectancyEarth and return true if it is greater than or equal to this.userInputAge', () => {
-    expect(myAgeCalculator.olderOrNot()).toEqual(true);    
-  });
   test('should take this.lifeExpectancyEarth and return false if it is not greater than or equal to this.userInputAge', () => {
     let myAgeCalculator2 = new AgeCalculator(55, 22);
     expect(myAgeCalculator2.olderOrNot()).toEqual(false);    
@@ -65,12 +62,19 @@ describe('AgeCalculator', () => {
     expect(myAgeCalculator2.yearsSurpassedJupiter()).toEqual(2.782462057335582);
   });
   test('should create an array of the 4 planet ages', () => {
-    expect(myAgeCalculator.arrayOfAges()).toEqual([175, 67.74193548387098, 22.340425531914896, 3.5413153456998314])
+    expect(myAgeCalculator.arrayOfAges()).toEqual([175, 67.74193548387098, 22.340425531914896, 3.5413153456998314]);
   });
   test('should create an array of the 5 planet yearsLeft including Earth', () => {
-    expect(myAgeCalculator.arrayOfYearsLeft()).toEqual([43, 179.16666666666669, 69.35483870967742, 22.872340425531917, 3.625632377740304])
+    expect(myAgeCalculator.arrayOfYearsLeft()).toEqual([43, 179.16666666666669, 69.35483870967742, 22.872340425531917, 3.625632377740304]);
   });
   test('should create an array of the 5 planet yearsSurpassed including Earth', () => {
-    expect(myAgeCalculator.arrayOfYearsLeft()).toEqual([-43, -179.16666666666669, -69.35483870967742, -22.872340425531917, -3.625632377740304])
+    expect(myAgeCalculator.arrayOfYearsSurpassed()).toEqual([-43, -179.16666666666669, -69.35483870967742, -22.872340425531917, -3.625632377740304]);
+  });
+  test('should determine if the users age is less than their life expectancy and return the arrayOfYearsLeft if it is less', () => {
+    expect(myAgeCalculator.youngerOrNot()).toEqual([43, 179.16666666666669, 69.35483870967742, 22.872340425531917, 3.625632377740304]);
+  });
+  let myAgeCalculator2 = new AgeCalculator(55, 22);
+  test('should determine if the users age is greater than their life expectancy and return the arrayOfYearsSurpassed if it is greater', () => {
+    expect(myAgeCalculator2.youngerOrNot()).toEqual([33, 137.5, 53.225806451612904, 17.5531914893617, 2.782462057335582]);
   });
 });
