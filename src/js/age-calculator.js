@@ -15,13 +15,6 @@ export default class AgeCalculator {
   jupiterAge() {
     return this.age / 11.86;
   }
-  olderOrNot() {
-    if (this.lifeExpectancyEarth >= this.age) {
-      return true;
-    } else {
-      return false;
-    }
-  }
   yearsLeft() {
     return this.lifeExpectancyEarth - this.age;
   }
