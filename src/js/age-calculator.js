@@ -59,6 +59,15 @@ export default class AgeCalculator {
     arrayOfAges[2] = this.marsAge();
     arrayOfAges[3] = this.jupiterAge();
     return arrayOfAges;
+  }
+  arrayOfYearsLeft() {
+    let arrayOfYearsLeft = [];
+    arrayOfYearsLeft[0] = this.yearsLeft();
+    arrayOfYearsLeft[1] = this.yearsLeftMercury();
+    arrayOfYearsLeft[2] = this.yearsLeftVenus();
+    arrayOfYearsLeft[3] = this.yearsLeftMars();
+    arrayOfYearsLeft[4] = this.yearsLeftJupiter();
+    return arrayOfYearsLeft;
   }  
 }
 
