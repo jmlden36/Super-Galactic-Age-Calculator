@@ -75,7 +75,7 @@ export default class AgeCalculator {
     if (this.age <= this.lifeExpectancyEarth) {
       return this.arrayOfYearsLeft();
     } else {
-      return false
+      return this.arrayOfYearsSurpassed();
     }    
   }  
 }
