@@ -70,4 +70,7 @@ describe('AgeCalculator', () => {
   test('should create an array of the 5 planet yearsLeft including Earth', () => {
     expect(myAgeCalculator.arrayOfYearsLeft()).toEqual([43, 179.16666666666669, 69.35483870967742, 22.872340425531917, 3.625632377740304])
   });
+  test('should create an array of the 5 planet yearsSurpassed including Earth', () => {
+    expect(myAgeCalculator.arrayOfYearsLeft()).toEqual([-43, -179.16666666666669, -69.35483870967742, -22.872340425531917, -3.625632377740304])
+  });
 });
