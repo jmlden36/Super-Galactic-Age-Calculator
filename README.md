@@ -1,8 +1,8 @@
 # Super Galactic Age Calculator
 
-#### (Super Galactic Age Calculator creates a AgeCalculator class that converts your age in years on Earth to years on other planets.)
+#### Super Galactic Age Calculator creates an AgeCalculator class that converts your age in years on Earth to years on other planets.
 
-#### By (Matt Luker)
+#### By Matt Luker
 
 ## Technologies Used
 
@@ -24,6 +24,7 @@
 *  Note: The {} symbols are to indicate what code needs to be written.  Do not use the {} symbol in your code
 * _Open your terminal and use the code {cd ~/Desktop} to navigate to your computer's desktop._
 * _In your terminal type the code {git clone https://github.com/jmlden36/Super-Galactic-Age-Calculator.git} to clone the Super Galactic Age Calculator repository onto your desktop._
+* _Type {cd Super-Galactic-Age-Calculator} to navigate into the project in your terminal._
 * _Type {code .} to open Super Galactic Age Calculator in your code editor or manually open it from your text editors file tab._
 * _Super Galactic Age Calculator does not contain any user interface but you can still test that all of the calculations work as anticipated._
 * _While you are in Super Galactic Age Calculator project directory in your terminal type {npm install} to install all of the packages and dependencies._
@@ -43,3 +44,5 @@ _[MIT](LICENSE.txt)_
 ## Contact Information
 
 * _For any questions or comments please email Matt Luker [jamesmattluker@gmail.com](mailto:jamesmattluker@gmail.com)._
+
+Copyright (c) _2021_ _James Matt Luker_
