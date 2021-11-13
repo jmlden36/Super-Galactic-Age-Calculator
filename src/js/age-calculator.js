@@ -69,6 +69,15 @@ export default class AgeCalculator {
     arrayOfYearsLeft[4] = this.yearsLeftJupiter();
     return arrayOfYearsLeft;
   }  
+  arrayOfYearsSurpassed() {
+    let arrayOfYearsSurpassed = [];
+    arrayOfYearsSurpassed[0] = this.yearsSurpassed();
+    arrayOfYearsSurpassed[1] = this.yearsSurpassedMercury();
+    arrayOfYearsSurpassed[2] = this.yearsSurpassedVenus();
+    arrayOfYearsSurpassed[3] = this.yearsSurpassedMars();
+    arrayOfYearsSurpassed[4] = this.yearsSurpassedJupiter();
+    return arrayOfYearsSurpassed;
+  }  
 }
 
 
