@@ -70,6 +70,13 @@ export default class AgeCalculator {
     arrayOfYearsSurpassed[3] = this.yearsSurpassedMars();
     arrayOfYearsSurpassed[4] = this.yearsSurpassedJupiter();
     return arrayOfYearsSurpassed;
+  }
+  youngerOrNot() {
+    if (this.age <= this.lifeExpectancyEarth) {
+      return this.arrayOfYearsLeft();
+    } else {
+      return false
+    }    
   }  
 }
 
