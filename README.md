@@ -14,10 +14,11 @@
 * _Markdown_
 * _VScode_
 * _eslint_
+* _Git_
 
 ## Description
 
-* Super Galactic Age Calculator creates a AgeCalculator class that converts your age from years on Earth to years on Mercury, Venus, Mars, and Jupiter.  Super Galactic Age Calculator can also show you the years you have left to live for each planed based on the inputted life expectancy.  The business logic that makes this project work has been fully tested with jest and has 100% test coverage with all tests passing.  The user interface can easily be built to take in a user's age and average life expectancy as well as control the data type entered into the AgeCalculator only allowing a number for the user's age and life expectancy.  
+* Super Galactic Age Calculator creates an AgeCalculator class that converts your age from years on Earth to years on Mercury, Venus, Mars, and Jupiter.  Super Galactic Age Calculator can also show you the years you have left to live for each planet based on the user's inputted life expectancy or if you have passed your life expectancy it will tell you how many years you have surpassed it.  The business logic that makes this project work has been fully tested with jest and has 100% test coverage with all tests passing.  The user interface can easily be built to take in a user's age and average life expectancy as well as control the data type entered into the AgeCalculator, only allowing a number for the user's age and life expectancy.  
 
 ## Setup/Installation Requirements
 
